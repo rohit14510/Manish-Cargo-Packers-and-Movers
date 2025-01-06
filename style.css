@@ -28,7 +28,7 @@ header {
     transition: .5s all;
 }
 .nav-links ul li a:hover{
-    color: red;
+    color: #CB4D2C;
 }
 
 .menu-icon {
@@ -90,6 +90,45 @@ header {
     }
 }
 /* ----------------------------------------------end   Header---------------------------------------------------------- */
+/* -----------------Call And Whatsapp Button--------------------- */
+.quick_contact a {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 18px;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  transition: transform 0.5s ease;
+}
+.qwhtsapp {
+  bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25d366;
+}
+.qcall {
+  bottom: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+}
+.quick_contact_icon {
+ 
+}
+.quick_contact a:hover {
+  transform: scale(1.1);
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 /* ---------------------------------------------Start Splide Slider----------------------------------------------------- */
 .Container_height{
   height: 80px !important;
@@ -132,7 +171,7 @@ header {
     transition: .3s;
 }
 .About_card:hover .about_title{
-    color: red;
+    color: #CB4D2C;
 }
 
 /* ------------------------------------------------------Services------------------------------------------------------ */
@@ -303,10 +342,10 @@ header {
 @media (max-width: 768px) {
     .poster img{
         width: 100%;
-        height: 30vh;
+        height: 20vh;
     }
     .poster_content h1 {
-        font-size:1.7rem !important;
+        font-size:1rem !important;
         margin-bottom:10px;
     }
     
