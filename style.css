@@ -161,38 +161,23 @@ header {
 
 /* ------------------------------------------------------------Start About Section---------------------------------- */
 .About_card{
-    border: 1px solid #efefef;
     padding: 40px;
     border-radius: 10px;
     margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transition: .5s;
 }
 .about_title{
     color: black;
-    transition: .3s;
+   
 }
-.About_card:hover .about_title{
-    color: #CB4D2C;
+.About_card:hover{
+ 
+  transform: translateY(-10px);
 }
 
 /* ------------------------------------------------------Services------------------------------------------------------ */
-.service_Card{
-    border: 1px solid #232951;
-    padding: 25px 20px;
-    transition: .5s;
-    margin-top: 20px;
-}
-.service_icon{
-    color: white;
-    transition: .5s;
-    transform: translateY(0%);
-}
-.service_Card:hover{
-    border: 1px solid red;
-}
-.service_Card:hover .service_icon{
-    color: red;
-    transform: translateY(-50%);
-}
+
 /* ---------------------------------------------------------Gallery---------------------------------------------------- */
 /* Gallery Item Styles */
 .gallery-item {
@@ -262,6 +247,11 @@ header {
     font-weight: 400 !important;
     margin-top: 20PX;
   }
+  /* ---------------------Branch-------------------------- */
+  .icon_size{
+    font-size: 10px;
+    padding-right: 5px;
+  }
 /* ----------------------------------------------------Choose Section------------------------------------------------ */
 .Choose_icon-container{
     width: 4rem;
@@ -284,6 +274,14 @@ header {
 }
 .choose_card:hover .Choose_icon{
     color: white;
+}
+.form-container{
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+.form-control{
+  background-color: #f4f4f4;
+  border-radius: 0%;
 }
 .form_btn {
     background-color: #e71b00;
@@ -500,6 +498,7 @@ header {
   /* --------------------------------------------Service Page------------------------------------------------------- */
   .ser_Card{
     border: 1px solid #f4f4f4 ;
+    background-color: #fff;
   }
   .ser_Card-title{
     color: black;
@@ -510,21 +509,25 @@ header {
   }
   .Book-link{
     text-decoration: none;
-    color: #e71b00;
+    color: #fff;
     font-weight: 700;
+    background-color: #e71b00;
+   
   }
   .Book-link:hover{
-    color: #e71b00;
+    background-color: #e71b00 !important;
+    color: white;
   }
   .ser_Card {
     position: relative;
     overflow: hidden;
     border-radius: 8px; /* Optional: for rounded corners */
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: .5s;
 }
 
 .ser_Card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+  transform: translateY(-10px);
 }
 
 .ser_Card img {
@@ -533,9 +536,11 @@ header {
     width: 100%;
     transition: transform 0.3s ease;
 }
-
+.img-container{
+  overflow: hidden;
+}
 .ser_Card:hover img {
-    transform: scale(1.1); /* Scale the image on hover */
+    transform: scale(1.1); 
 }
 
 .ser_Card img::before {
