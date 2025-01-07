@@ -475,6 +475,28 @@ header {
   .mission_Icon-conatiner i{
     color: #e71b00;
   }
+  .accordion-header .accordion-button {
+    font-size: 1.25rem; /* Increase font size */
+    font-weight: 500; /* Make it bold */
+  }
+  
+  .accordion-item {
+    border: 1px solid #ddd !important; /* Add a light border */
+    border-radius: 5px; /* Add rounded corners */
+    margin-bottom: 10px; /* Add spacing between accordion items */
+  }
+  
+  .accordion-item:last-child {
+    margin-bottom: 0; /* Remove margin for the last item */
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: white; /* Active background color */
+    color: #e71b00; /* Active text color */
+  }
+  .accordion-button:focus {
+    box-shadow: none !important; /* Remove focus outline */
+    border-color: red !important; /* Focus border color */
+  }
   /* --------------------------------------------Service Page------------------------------------------------------- */
   .ser_Card{
     border: 1px solid #f4f4f4 ;
