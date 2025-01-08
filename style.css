@@ -89,6 +89,47 @@ header {
         margin: 0 45px;
     }
 }
+
+
+
+
+
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0px ;
+  min-width: 300px;
+  z-index: 10;
+}
+
+.nav-links .dropdown-menu li {
+  padding:  0px;
+  margin: 0%;
+}
+
+.nav-links .dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links .dropdown-menu li a:hover {
+  color: #CB4D2C;
+  background-color: #f4f4f4;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 /* ----------------------------------------------end   Header---------------------------------------------------------- */
 /* -----------------Call And Whatsapp Button--------------------- */
 .quick_contact a {
